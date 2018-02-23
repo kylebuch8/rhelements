@@ -44,10 +44,11 @@
     "lerna": "lerna",
     "test": "lerna run test",
     "build": "lerna run build",
+    "rough-draft": "lerna run rough-draft",
     "bootstrap": "lerna bootstrap --hoist",
     "postinstall": "npm run bootstrap",
     "precommit": "lint-staged",
-    "storybook": "start-storybook -p 9001 -c .storybook"
+    "storybook": "npm run rough-draft && start-storybook -p 9001 -c .storybook"
   },
   "lint-staged": {
     "*.{js,json}": [

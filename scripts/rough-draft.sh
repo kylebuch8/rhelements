@@ -7,4 +7,4 @@ OUT_FILE=$2
 # use (paths work as written at build-time when installed into a node_modules
 # directory)
 
-cat $IN_FILE | sed -E 's/import (\S+) from "\.\.\/\.\.\/([^\.])/import \1 from "..\/..\/node_modules\/\2/' > $OUT_FILE
+cat $IN_FILE | sed -E 's/import (\S+) from "\.\.\/\.\.\/([^\.])/\/\/ path to \1 below was rewritten by the rough-draft script, for storybook\nimport \1 from "..\/..\/node_modules\/\2/' > $OUT_FILE

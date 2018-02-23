@@ -1,4 +1,4 @@
 node_modules
 lerna-debug.log
-*.local.compiled.js
-*.local.js
+*.rough-draft.compiled.js
+*.rough-draft.js
